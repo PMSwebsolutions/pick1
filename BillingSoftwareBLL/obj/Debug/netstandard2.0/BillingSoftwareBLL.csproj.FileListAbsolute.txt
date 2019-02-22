@@ -1,0 +1,9 @@
+P:\Pick\Project\BillingSoftware\BillingSoftware\BillingSoftwareBLL\bin\Debug\netstandard2.0\BillingSoftwareBLL.deps.json
+P:\Pick\Project\BillingSoftware\BillingSoftware\BillingSoftwareBLL\bin\Debug\netstandard2.0\BillingSoftwareBLL.dll
+P:\Pick\Project\BillingSoftware\BillingSoftware\BillingSoftwareBLL\obj\Debug\netstandard2.0\BillingSoftwareBLL.csproj.CoreCompileInputs.cache
+P:\Pick\Project\BillingSoftware\BillingSoftware\BillingSoftwareBLL\obj\Debug\netstandard2.0\BillingSoftwareBLL.AssemblyInfoInputs.cache
+P:\Pick\Project\BillingSoftware\BillingSoftware\BillingSoftwareBLL\obj\Debug\netstandard2.0\BillingSoftwareBLL.AssemblyInfo.cs
+P:\Pick\Project\BillingSoftware\BillingSoftware\BillingSoftwareBLL\obj\Debug\netstandard2.0\BillingSoftwareBLL.csprojAssemblyReference.cache
+P:\Pick\Project\BillingSoftware\BillingSoftware\BillingSoftwareBLL\bin\Debug\netstandard2.0\BillingSoftwareBLL.pdb
+P:\Pick\Project\BillingSoftware\BillingSoftware\BillingSoftwareBLL\obj\Debug\netstandard2.0\BillingSoftwareBLL.dll
+P:\Pick\Project\BillingSoftware\BillingSoftware\BillingSoftwareBLL\obj\Debug\netstandard2.0\BillingSoftwareBLL.pdb

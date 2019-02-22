@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="BO\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.7" />
+    <PackageReference Include="DapperExtensions" Version="1.6.3" />
+    <PackageReference Include="Npgsql" Version="4.0.4" />
+  </ItemGroup>
+
+</Project>
