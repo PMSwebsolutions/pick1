@@ -86,10 +86,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin\homeAdmin.aspx" />
+    <Content Include="admin\js\knockout-3.5.0.js" />
+    <Content Include="admin\js\login.js" />
     <Content Include="Web.config" />
     <Content Include="login.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="admin\homeAdmin.aspx.cs">
       <DependentUpon>homeAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -107,6 +116,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
