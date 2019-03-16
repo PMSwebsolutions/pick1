@@ -46,7 +46,7 @@
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
                         <a class="logo" href="index.html">
-                            <h1>Sunrise Admin</h1>
+                            <h1>Biller's Admin</h1>
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -60,12 +60,12 @@
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                            <a class="js-arrow" href="homeAdmin.aspx">
+                                <i class="fas fa-tachometer-alt"></i>Product</a>
                         </li>
                         <li>
-                            <a href="chart.html">
-                                <i class="fas fa-chart-bar"></i>Charts</a>
+                            <a href="addProduct.aspx">
+                                <i class="fas fa-chart-bar"></i>Add Product</a>
                         </li>
                         <li>
                             <a href="table.html">
@@ -154,24 +154,24 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
-                            <a class="js-arrow" href="#">
+                            <a class="js-arrow" href="homeAdmin.aspx">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                         <li>
-                            <a href="chart.html">
-                                <i class="fas fa-chart-bar"></i>Charts</a>
+                            <a href="homeAdmin.aspx">
+                                <i class="fas fa-chart-bar"></i>Products</a>
                         </li>
                         <li>
-                            <a href="table.html">
-                                <i class="fas fa-table"></i>Tables</a>
+                            <a href="addProduct.aspx">
+                                <i class="fas fa-table"></i>Add Product</a>
                         </li>
                         <li>
-                            <a href="form.html">
-                                <i class="far fa-check-square"></i>Forms</a>
+                            <a href="stocks.aspx">
+                                <i class="far fa-check-square"></i>Stocks</a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fas fa-calendar-alt"></i>Calendar</a>
+                            <a href="addStock.aspx">
+                                <i class="fas fa-calendar-alt"></i>Add Stocks</a>
                         </li>
                         <li>
                             <a href="map.html">

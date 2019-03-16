@@ -1,24 +1,28 @@
 ﻿var mainVM;
 $(document).ready(function () {
-    mainVM = new loginViewModel();
+    mainVM = new StockViewModel();
     ko.applyBindings(mainVM);
 });
 
-function NameListViewModel(CP) {
-    self.orderId = ko.observable();
+function StockListViewModel(CP) {
+    self.orderId = ko.observable('1234');
     self.product = ko.observable();
+    self.quantity = ko.observable();
+    self.description = ko.observable();
     self.price = ko.observable();
     this.id = ko.observable();
     if (CP) {
-        self.product(CP.data.item);
+        self.product(CP.data.product);
         self.orderId(CP.data.id);
-        self.price(CP.data.cost);
+        self.price(CP.data.price);
+        self.quantity(CP.data.quantity);
+        self.description(CP.data.description);
         this.id(CP.data.id);
     };
     self.cdelete = function () {
         $.ajax({
             type: "POST",
-            url: "homeAdmin.aspx/deleteName",
+            url: "addStock.aspx/deleteStock",
             data: "{'id':'" + this.id() + "'}",
             contentType: "application/json; charset=utf-8",
             dataType: "json",
@@ -31,29 +35,32 @@ function NameListViewModel(CP) {
         });
     };
 
-  /*  self.cedit = function () {
-        window.location = "modifyName.aspx?id=" + this.id();
-    };*/
+    /*  self.cedit = function () {
+          window.location = "modifyName.aspx?id=" + this.id();
+      };*/
 }
 
 
-function loginViewModel() {
+function StockViewModel() {
+
     var self = this;
     self.productList = ko.observableArray([]);
-    self.addProductName = ko.observable();
-    self.addProductCost = ko.observable();
+    self.addStockProduct = ko.observable('1');
+    self.addStockPrice = ko.observable('2');
+    self.addStockId = ko.observable('3');
+    self.addStockQuantity = ko.observable('4');
+    self.addStockDescription = ko.observable('5');
     viewFun();
-    self.addProduct = function () {
-        
+    self.addStockBtn = function () {
         $.ajax({
             type: "POST",
-            url: "homeAdmin.aspx/addProducts",
-            data: "{'item':'" + self.addProductName() + "','cost': '" + self.addProductCost() +  "'}",
+            url: "addStock.aspx/addStocks",
+            data: "{'product':'" + self.addStockProduct() + "','description': '" + self.addStockDescription() + "','price': '" + self.addStockPrice() + "', 'quantity': '" + self.addStockQuantity() + "','id': '" + self.addStockId() + "'}",
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (datas) {
                 if (datas.d == "success") {
-                    location.replace("homeAdmin.aspx");
+                    location.replace("stocks.aspx");
                 } else {
                     alert("Not updated");
                 }
@@ -65,16 +72,16 @@ function loginViewModel() {
     }
 
     //viewFun();
-    function viewFun() {
+    function viewFun() {    
         $.ajax({
             type: "POST",
-            url: "homeAdmin.aspx/getProducts",
+            url: "stocks.aspx/getStocks",
             data: "{}",
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (datas) {
                 for (var i = 0; i < datas.d.length; i++) {
-                    self.productList.push(new NameListViewModel({ data: datas.d[i] }));
+                    self.productList.push(new StockListViewModel({ data: datas.d[i] }));
                 };
             },
             error: function () {

@@ -35,4 +35,21 @@ namespace BillingSoftwareBLL.DAPPER
 
 
 
+    class stockDapperMapper : ClassMapper<stockDapper>
+    {
+        public stockDapperMapper()
+        {
+            base.Table("stock_table");
+            Map(a => a.username).Column("username");
+            Map(a => a.product).Column("product");
+            Map(a => a.description).Column("description");
+            Map(a => a.price).Column("price");
+            Map(a => a.id).Column("id");
+        }
+
+
+
+    }
+
+
 }
