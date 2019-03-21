@@ -8,6 +8,7 @@ function NameListViewModel(CP) {
     self.orderId = ko.observable();
     self.product = ko.observable();
     self.price = ko.observable();
+    self.search = ko.observable();
     this.id = ko.observable();
     if (CP) {
         self.product(CP.data.item);
@@ -42,6 +43,7 @@ function loginViewModel() {
     self.productList = ko.observableArray([]);
     self.addProductName = ko.observable();
     self.addProductCost = ko.observable();
+    self.search = ko.observable();
     viewFun();
     self.addProduct = function () {
         

@@ -45,11 +45,12 @@ function StockViewModel() {
 
     var self = this;
     self.productList = ko.observableArray([]);
-    self.addStockProduct = ko.observable('1');
-    self.addStockPrice = ko.observable('2');
-    self.addStockId = ko.observable('3');
-    self.addStockQuantity = ko.observable('4');
-    self.addStockDescription = ko.observable('5');
+    self.search = ko.observable();
+    self.addStockProduct = ko.observable();
+    self.addStockPrice = ko.observable();
+    self.addStockId = ko.observable();
+    self.addStockQuantity = ko.observable();
+    self.addStockDescription = ko.observable();
     viewFun();
     self.addStockBtn = function () {
         $.ajax({
